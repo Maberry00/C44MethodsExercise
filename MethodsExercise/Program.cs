@@ -6,22 +6,49 @@ namespace MethodsExercise
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("What is your name?");
-            var name = Console.ReadLine(); // input
+            int sum = Add(5, 5);
+            Console.WriteLine($"Sum is {sum}");
 
-            Console.WriteLine("What is your favorite color?");
-            var color = Console.ReadLine(); // input 
+            int cal = Sub(20, 5);
+            Console.WriteLine($"cal is {cal}");
 
-            Console.WriteLine("What is your favorite animal?");
-            var animal = Console.ReadLine(); // input
+            int multiplied = Mul(5, 10);
+            Console.WriteLine($"Mul is {multiplied}");
 
-            Console.WriteLine("What band do you like listening to?");
-            var band = Console.ReadLine(); // input
+            int divisible = Div(100, 20);
+            Console.WriteLine($"div is {divisible}");
 
-            Console.WriteLine($"The big guy named {name} is a very interesting person." +
-                $" He loves the color {color} and his favorite band is {band} that's a crazy coincidence." +
-                $" His favorite animal is a {animal} I guess because they sometimes live in pastors which are also green.");
+            int modulus = Mod(10, 2);
+            Console.WriteLine($"mod is {modulus}");
+            
+        }
 
+        
+        public static int Add(int x, int y)
+        {
+            return x + y;
+        }
+
+        public static int Sub(int x, int y)
+        {
+           return x - y;
+        }
+    
+        public static int Mul(int x, int y)
+        {
+             return x * y;
+        }
+        
+        public static int Div(int x, int y)
+        {
+             return x / y;
+        }
+        
+        public static int Mod(int x, int y)
+        {
+             return x % y;
+        
+        
         }
     }
 }
